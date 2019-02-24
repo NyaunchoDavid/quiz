@@ -1,33 +1,22 @@
 $(function(){
-  $(".send").hide();
+  $("#send").hide();
 });
 $(function(){
   $("#week").submit(function(event){
-    var queThree = $("input:radio[name=flavor]:checked").val();
-    var queFour = $("input:radio[name=taste]:checked").val();
-    var queFive = $("input:radio[name=sour]:checked").val();
-    var correct = 0;
-    if(queThree=="doc"){
-      correct++;
-    }
-    if(queFour=="con"){
-      correct++;
-    }
-    if(queFive=="var"){
-      correct++;
-    }
-    var score;
-    if(correct<1){
-      score=2;
-    }
-    if(correct>0 && correct < 3){
-      score=1;
-    }
-    if(correct>2){
-      score=0;
-    }
-    $(".ans").text(correct);
-    $("#send").show();
+    var queThree = parseInt($("input:radio[name=flavor]:checked").val());
+    var queFour = parseInt($("input:radio[name=taste]:checked").val());
+    var queFive = parseInt($("input:radio[name=sour]:checked").val());
+    var correct = (queThree  + queFour + queFive);
+    var percentage = (correct / 3 * 100);
+    $("#send").text("You have scored: " + percentage + "%");
+  if (percentage > 80) {
+    $(".ans").text("You have passed hurrah!");
+  } else if ((percentage > 50) && (percentage < 79)) {
+    $(".ans").text("You tried!");
+  } else {
+    $(".ans").text("You Have Failed!");
+  }
+  $("#send").show();
     event.preventDefault();
   });
 });
