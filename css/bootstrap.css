@@ -10,13 +10,11 @@ h5{
 }
 .well{
   width:55%;
+  margin-left:auto;
+  margin-right:auto;
 }
 h1{
-  position:absolute;
-  top:24px;
-  left:720px;
   font-size:66px;
-  z-index:44;
   color:#650000;
   text-shadow:1px 2px 3px #872597;
 }
