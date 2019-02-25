@@ -1,3 +1,15 @@
+# Quiz-form
+It is a form of questions where a student is supposed to answer javascript questions
+# By Nyauncho David
+## Description
+students answer questions in javascript and are given an output of what they scored
+# BDD
+-Questions are fundermentals of javascript
+-all questions answered correctly gives out 100% score sheet
+-results are at the bottom of the questions submitted
+-after done  click the finished button to submit
+## project details
+link to the live site https://nyaunchodavid.github.io/quiz/ 
 
 MIT License
 
