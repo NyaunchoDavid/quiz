@@ -2,10 +2,11 @@ body{
   background-image:url("/home/david/Documents/boot/wall.jpg");
   background-repeat:no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 h1{
   position:absolute;
-  top:0px;
+  top:24px;
   left:720px;
   font-size:66px;
   z-index:44;
@@ -14,15 +15,13 @@ h1{
 }
 h3{
   text-shadow:2px 2px 6px red;
-  z-index:5;
 }
 .send{
   border:1px solid #650000;
   width:300px;
-  float:right;
   height:50px;
   font-size:18px;
-  padding:14px;
+  padding:6px;
   background-color:#000000;
   border-radius:2px;
 }
@@ -51,7 +50,8 @@ label{
   width:140px;
   height:40px;
   border-radius:7px;
-  margin-top:38px;
+  margin-top:13px;
+  margin-bottom:19px;
   color:#fff;
 }
 .btn:hover{
