@@ -4,6 +4,10 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
+h5{
+  color:#ffffff;
+  text-align:center;
+}
 h1{
   position:absolute;
   top:24px;
