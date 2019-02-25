@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
   $("#week").submit(function(event){
     event.preventDefault();
     var queThree = parseInt($("input:radio[name=flavor]:checked").val());
