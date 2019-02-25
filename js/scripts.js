@@ -8,9 +8,11 @@ $(function(){
     $("#send").text("You have scored: " + percentage + "%");
   if (percentage > 80) {
     $("#see").text("You have passed hurrah!");
-  } else if ((percentage > 50) && (percentage < 79)) {
+  }
+   else if ((percentage > 50) && (percentage < 79)) {
     $("#see").text("You tried!");
-  } else {
+  }
+  else {
     $("#see").text("You Have Failed!");
   }
     event.preventDefault();
