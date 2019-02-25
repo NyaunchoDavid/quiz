@@ -1,7 +1,4 @@
 $(function(){
-  $("#send").hide();
-});
-$(function(){
   $("#week").submit(function(event){
     var queThree = parseInt($("input:radio[name=flavor]:checked").val());
     var queFour = parseInt($("input:radio[name=taste]:checked").val());
@@ -16,7 +13,6 @@ $(function(){
   } else {
     $(".ans").text("You Have Failed!");
   }
-  $("#send").show();
     event.preventDefault();
   });
 });
